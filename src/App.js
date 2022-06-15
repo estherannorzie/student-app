@@ -1,21 +1,15 @@
-// student list is imported alongside its path
+// StudentList and ClassInfo are imported alongside their relative paths
 import StudentList from './components/StudentList';
+import ClassInfo from './components/ClassInfo';
 
 function App() {
     return (
       <main>
-        <h1>Attendance</h1>
         <StudentList></StudentList>
+        <h1>Attendance</h1>
+        <ClassInfo></ClassInfo>
       </main>
   );
-  // alternative
-  // const studentList = <StudentList></StudentList>;
-  // return (
-  //   <main>
-  //     <h1>Attendance</h1>
-  //     {studentList}
-  //   </main>
-  // );
 }
 
 export default App;
