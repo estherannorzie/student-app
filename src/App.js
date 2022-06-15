@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+// student list is imported alongside its path
+import StudentList from './components/StudentList';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    return (
+      <main>
+        <h1>Attendance</h1>
+        <StudentList></StudentList>
+      </main>
   );
+  // alternative
+  // const studentList = <StudentList></StudentList>;
+  // return (
+  //   <main>
+  //     <h1>Attendance</h1>
+  //     {studentList}
+  //   </main>
+  // );
 }
 
 export default App;
