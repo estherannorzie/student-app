@@ -5,9 +5,9 @@ import ClassInfo from './components/ClassInfo';
 function App() {
   return (
     <main>
-      <StudentList></StudentList>
       <h1>Attendance</h1>
       <ClassInfo></ClassInfo>
+      <StudentList></StudentList>
     </main>
   );
 }
