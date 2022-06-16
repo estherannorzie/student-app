@@ -4,10 +4,13 @@ import './StudentList.css';
 
 // components begin with a function. Can be defined as arrow functions or regular functions
 const StudentList = () => {
+  const headingClass = 'student-list__heading';
+  const listClass = 'student-list';
+
   return (
     <section>
-      <h2 className='student-list__heading'>Student List</h2>
-      <ul className='student-list'>
+      <h2 className={headingClass}>Student List</h2>
+      <ul className={listClass}>
         <li>Student A</li>
         <li>Student B</li>
         <li>Student C</li>
