@@ -12,9 +12,9 @@ const StudentList = () => {
     <section>
       <h2 className={headingClass}>Student List</h2>
       <ul className={listClass}>
-        <li><Student></Student></li>
-        <li><Student></Student></li>
-        <li><Student></Student></li>
+        <li><Student name="Ada" email="ada@dev.org"></Student></li>
+        <li><Student name="Soo-ah" email="sooah@dev.org"></Student></li>
+        <li><Student name="Chrissy" email="chrissy@dev.org"></Student></li>
       </ul>
     </section>
   );
