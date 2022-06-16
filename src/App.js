@@ -3,12 +3,12 @@ import StudentList from './components/StudentList';
 import ClassInfo from './components/ClassInfo';
 
 function App() {
-    return (
-      <main>
-        <StudentList></StudentList>
-        <h1>Attendance</h1>
-        <ClassInfo></ClassInfo>
-      </main>
+  return (
+    <main>
+      <StudentList></StudentList>
+      <h1>Attendance</h1>
+      <ClassInfo></ClassInfo>
+    </main>
   );
 }
 
