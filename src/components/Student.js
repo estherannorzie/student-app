@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types";
+
 // props from StudentList
 const Student = (props) => {
   return (
@@ -9,4 +11,8 @@ const Student = (props) => {
   );
 };
 
+Student.propTypes = {
+  name: PropTypes.string.isRequired,
+  email: PropTypes.string.isRequired,
+};
 export default Student;
