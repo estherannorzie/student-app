@@ -7,11 +7,28 @@ import Student from './Student';
 const StudentList = () => {
   const headingClass = 'student-list__heading';
   const listClass = 'student-list';
-  const studentComponents = [
-    <li><Student name="Ada" email="ada@dev.org"></Student></li>,
-    <li><Student name="Soo-ah" email="sooah@dev.org"></Student></li>,
-    <li><Student name="Chrissy" email="chrissy@dev.org"></Student></li>
+  const studentData = [
+    {
+      nameData: 'Ada',
+      emailData: 'ada@dev.org'
+    },
+    {
+      nameData: 'Soo-ah',
+      emailData: 'sooah@dev.org'
+    },
+    {
+      nameData: 'Chrissy',
+      emailData: 'chrissy@dev.org'
+    }
   ];
+
+  // sets studentComponents to an array of JSX elements. It does this by iterating over each object in studentData, passing each value, one at a time, into our anonymous function as the student parameter. 
+  const studentComponents = studentData.map(student => {
+    return (
+      <li><Student name={student.nameData} email={student.emailData}></Student></li>
+      );
+    }
+  );
 
   return (
     <section>
