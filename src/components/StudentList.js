@@ -8,7 +8,6 @@ const StudentList = (props) => {
   const headingClass = "student-list__heading";
   const listClass = "student-list";
 
-  // sets studentComponents to an array of JSX elements. It does this by iterating over each object in studentData, passing each value, one at a time, into our anonymous function as the student parameter.
   const studentComponents = props.students.map((student, index) => {
     return (
       <li key={index}>

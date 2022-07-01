@@ -1,5 +1,5 @@
-import React from 'react';
-
+import React from "react";
+// props from StudentList
 const Student = (props) => {
   return (
     <ul>

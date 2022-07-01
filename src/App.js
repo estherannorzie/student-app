@@ -1,7 +1,7 @@
-// StudentList and ClassInfo are imported alongside their relative paths
+// StudentList and ClassInfo are imported so that they can be returned later
 import StudentList from "./components/StudentList";
 import ClassInfo from "./components/ClassInfo";
-// moving studentData here allows here to display student infor for multiple classes
+// moving studentData here allows here to display student info for multiple classes
 function App() {
   const studentData = [
     {

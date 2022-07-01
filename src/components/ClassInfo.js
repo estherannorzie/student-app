@@ -1,8 +1,8 @@
 import React from "react";
-
+// getting props from App
 const ClassInfo = (props) => {
   return (
-    // wrap this content with an outer <section> element, else there will be an error.
+    // wrap this content with an outer element, else there will be an error.
     <section>
       <h2>Class Information</h2>
       <ul>
