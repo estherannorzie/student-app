@@ -1,9 +1,8 @@
-// Importing React makes the built-in React functionality available through an object named React.
 import React from "react";
 import "./StudentList.css";
 import Student from "./Student";
+import PropTypes from "prop-types";
 
-// components begin with a function. Can be defined as arrow functions or regular functions
 const StudentList = (props) => {
   const headingClass = "student-list__heading";
   const listClass = "student-list";
@@ -24,5 +23,15 @@ const StudentList = (props) => {
   );
 };
 
-// to use the StudentList component in other files, export it
+StudentList.propTypes = {
+  students: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      nameData: PropTypes.string.isRequired,
+      emailData: PropTypes.string.isRequired,
+      isPresentData: PropTypes.bool,
+    })
+  ),
+};
+
 export default StudentList;
