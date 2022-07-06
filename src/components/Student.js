@@ -27,7 +27,10 @@ const Student = (props) => {
 };
 
 Student.propTypes = {
-  name: PropTypes.string.isRequired,
-  email: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
+  nameData: PropTypes.string.isRequired,
+  emailData: PropTypes.string.isRequired,
+  isPresentData: PropTypes.bool,
 };
+
 export default Student;
