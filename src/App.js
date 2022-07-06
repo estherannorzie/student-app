@@ -24,6 +24,17 @@ function App() {
     },
   ]);
 
+  const updateStudentData = (updatedStudent) => {
+    const students = studentData.map((student) => {
+      if (student.id === updatedStudent.id) {
+        return updatedStudent;
+      } else {
+        return student;
+      }
+    });
+    setStudentData(students);
+  };
+
   return (
     <main>
       <h1>Attendance</h1>
