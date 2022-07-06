@@ -39,7 +39,10 @@ function App() {
     <main>
       <h1>Attendance</h1>
       <ClassInfo numberOfStudents={studentData.length}></ClassInfo>
-      <StudentList students={studentData}></StudentList>
+      <StudentList
+        students={studentData}
+        onUpdateStudent={updateStudentData}
+      ></StudentList>
     </main>
   );
 }
