@@ -22,6 +22,7 @@ Student.propTypes = {
   name: PropTypes.string.isRequired,
   email: PropTypes.string.isRequired,
   isPresent: PropTypes.bool,
+  onUpdate: PropTypes.func.isRequired,
 };
 
 export default Student;
