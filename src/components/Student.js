@@ -7,10 +7,13 @@ const Student = (props) => {
   const [isPresent, setIsPresent] = useState(false);
 
   return (
-    <ul>
-      <li>Nickname: {props.name}</li>
-      <li>Email: {props.email}</li>
-    </ul>
+    <div>
+      <ul>
+        <li>Nickname: {props.name}</li>
+        <li>Email: {props.email}</li>
+      </ul>
+      <button>Toggle if {props.name} is present</button>
+    </div>
   );
 };
 
