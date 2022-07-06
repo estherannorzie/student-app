@@ -28,9 +28,9 @@ const Student = (props) => {
 
 Student.propTypes = {
   id: PropTypes.number.isRequired,
-  nameData: PropTypes.string.isRequired,
-  emailData: PropTypes.string.isRequired,
-  isPresentData: PropTypes.bool,
+  name: PropTypes.string.isRequired,
+  email: PropTypes.string.isRequired,
+  isPresent: PropTypes.bool,
 };
 
 export default Student;
