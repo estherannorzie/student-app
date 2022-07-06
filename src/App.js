@@ -1,9 +1,9 @@
-// StudentList and ClassInfo are imported so that they can be returned later
 import StudentList from "./components/StudentList";
 import ClassInfo from "./components/ClassInfo";
-// moving studentData here allows here to display student info for multiple classes
+import { useState } from "react";
+
 function App() {
-  const studentData = [
+  const [studentData, setStudentData] = useState([
     {
       id: 1,
       nameData: "Ada",
@@ -22,7 +22,7 @@ function App() {
       emailData: "chrissy@dev.org",
       isPresentData: false,
     },
-  ];
+  ]);
 
   return (
     <main>
