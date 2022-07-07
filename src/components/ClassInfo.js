@@ -7,7 +7,7 @@ const ClassInfo = (props) => {
       <h2>Class Information</h2>
       <ul>
         <li>Name: Team Semicolons</li>
-        <li>Number of members: {props.numberOfStudents}</li>
+        <li>Number of members: {props.memberCount}</li>
       </ul>
     </section>
   );
