@@ -1,8 +1,8 @@
 import React from "react";
-// getting props from App
+import PropTypes from "prop-types";
+
 const ClassInfo = (props) => {
   return (
-    // wrap this content with an outer element, else there will be an error.
     <section>
       <h2>Class Information</h2>
       <ul>
@@ -11,6 +11,10 @@ const ClassInfo = (props) => {
       </ul>
     </section>
   );
+};
+
+ClassInfo.propTypes = {
+  memberCount: PropTypes.number,
 };
 
 export default ClassInfo;

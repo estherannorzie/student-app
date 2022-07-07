@@ -1,6 +1,6 @@
+import { useState } from "react";
 import StudentList from "./components/StudentList";
 import ClassInfo from "./components/ClassInfo";
-import { useState } from "react";
 
 function App() {
   const [studentData, setStudentData] = useState([
@@ -38,7 +38,7 @@ function App() {
   return (
     <main>
       <h1>Attendance</h1>
-      <ClassInfo numberOfStudents={studentData.length}></ClassInfo>
+      <ClassInfo memberCount={studentData.length}></ClassInfo>
       <StudentList
         students={studentData}
         onUpdateStudent={updateStudentData}
