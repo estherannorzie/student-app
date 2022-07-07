@@ -35,10 +35,17 @@ function App() {
     setStudentData(students);
   };
 
+  const deleteStudentData = () => {
+    setStudentData([]);
+  };
+
   return (
     <main>
       <h1>Attendance</h1>
-      <ClassInfo memberCount={studentData.length}></ClassInfo>
+      <ClassInfo
+        memberCount={studentData.length}
+        onDeleteStudent={deleteStudentData}
+      ></ClassInfo>
       <StudentList
         students={studentData}
         onUpdateStudent={updateStudentData}
