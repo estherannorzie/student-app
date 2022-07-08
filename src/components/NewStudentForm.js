@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 
 const NewStudentForm = () => {
   const [formFields, setFormFields] = useState({
@@ -37,6 +38,10 @@ const NewStudentForm = () => {
       <input type="submit" value="Add Student" />
     </form>
   );
+};
+
+NewStudentForm.propTypes = {
+  addStudentCallback: PropTypes.func.isRequired,
 };
 
 export default NewStudentForm;
