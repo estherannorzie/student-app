@@ -20,6 +20,7 @@ const ClassInfo = (props) => {
 
 ClassInfo.propTypes = {
   memberCount: PropTypes.number,
+  onDeleteStudent: PropTypes.func.isRequired,
 };
 
 export default ClassInfo;
