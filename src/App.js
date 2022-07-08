@@ -68,7 +68,7 @@ function App() {
         students={studentData}
         onUpdateStudent={updateStudentData}
       ></StudentList>
-      <NewStudentForm>addStudentCallback={addStudentData}</NewStudentForm>
+      <NewStudentForm addStudentCallback={addStudentData}></NewStudentForm>
     </main>
   );
 }
