@@ -6,15 +6,29 @@ const NewStudentForm = () => {
     email: "",
   });
 
+  const onNameChange = (event) => {
+    setFormFields({
+      ...formFields,
+      name: event.target.value,
+    });
+  };
+
+  const onEmailChange = (event) => {
+    setFormFields({
+      ...formFields,
+      email: event.target.value,
+    });
+  };
+
   return (
     <form>
       <div>
         <label htmlFor="fullName">Name:</label>
-        <input name="fullName" />
+        <input name="fullName" value={formFields.name} />
       </div>
       <div>
         <label htmlFor="email">Email:</label>
-        <input name="email" />
+        <input name="email" value={formFields.email} />
       </div>
       <input type="submit" value="Add Student" />
     </form>
