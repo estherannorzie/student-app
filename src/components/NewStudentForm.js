@@ -1,4 +1,11 @@
+import { useState } from "react";
+
 const NewStudentForm = () => {
+  const [formFields, setFormFields] = useState({
+    name: "",
+    email: "",
+  });
+
   return (
     <form>
       <div>
