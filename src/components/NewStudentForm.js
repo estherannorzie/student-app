@@ -24,11 +24,15 @@ const NewStudentForm = () => {
     <form>
       <div>
         <label htmlFor="fullName">Name:</label>
-        <input name="fullName" value={formFields.name} />
+        <input
+          name="fullName"
+          value={formFields.name}
+          onChange={onNameChange}
+        />
       </div>
       <div>
         <label htmlFor="email">Email:</label>
-        <input name="email" value={formFields.email} />
+        <input name="email" value={formFields.email} onChange={onEmailChange} />
       </div>
       <input type="submit" value="Add Student" />
     </form>
